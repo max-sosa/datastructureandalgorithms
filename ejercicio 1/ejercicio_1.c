@@ -4,9 +4,7 @@
 
 int main()
 {
-    float p;
-    float a;
-    float resultado;
+    float p, a, resultado;
     printf("Ingrese su peso en kilogramos\n");
     scanf("%f",&p);
     printf("Ingrese su altura en metros\n");
