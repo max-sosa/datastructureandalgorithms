@@ -8,8 +8,9 @@ int numero, v[9], pos, may, i, cont;
 
 int main(){
 
-may = v[0];
+may = 0;
 cont = 0;
+pos = v[0];
 
     for (i=0;i<9;i++){
         numero = rand()%(10-100+1);
