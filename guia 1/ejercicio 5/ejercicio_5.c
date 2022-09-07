@@ -15,7 +15,7 @@ main ()
   int edad, i = 0, suma = 0, promedio = 0, cont1 = 0, cont2 = 0, cont3 = 0, j = 0;
   float sueldo;
 
-
+  printf("El programa finaliza al ingresar EDAD=0 y SUELDO=0.\n");
   printf ("Ingrese la edad del empleado: ");
   scanf ("%i", &edad);
 

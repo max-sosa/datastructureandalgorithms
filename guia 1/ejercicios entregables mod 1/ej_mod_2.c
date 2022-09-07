@@ -1,6 +1,8 @@
 /*2. Ingresar números hasta leer un cero. Se pide informar la cantidad de números malvados leídos.
 Un Número malvado es todo número natural cuya expresión en base 2 (binaria) contiene un número par de unos.
-Por ejemplo 12 , y 15 son números malvados ya que 12=11002 y 15=11112.*/
+Por ejemplo 12 , y 15 son números malvados ya que 12=11002 y 15=11112.*/ 
+
+//ARREGLAR PORQUE NO FUNCIONA BIEN, TOTAL?!?.
 
 #include <stdio.h>
 #include <math.h>
