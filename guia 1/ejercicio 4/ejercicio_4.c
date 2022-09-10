@@ -1,49 +1,51 @@
+/* 4. Ingresar números hasta que dicho número sea negativo. Calcular y mostrar:
+a) Cantidad de números mayores a 4 y menores a 25.
+b) Promedio de aquellos números múltiplos de 6.
+c) El menor número leído.*/
+
 #include <stdio.h>
-#include <stdlib.h>
 #include <math.h>
 
-int i, numero, v[10], cont, multiplo, acc, promedio;
+int main(){
+    
+    int numero, cont=0, multiplo=0, acc=0, promedio=0,min;
+    
+    printf("Para ver los resultados ingrese un numero negativo.\n");
+    printf("Ingrese un número (hasta 10 números): ");
+    scanf("%i",&numero);
 
-int main()
-{
+    min = numero;
 
-i = 0;
-acc = 0;
-multiplo = 0;
-
-    do{
-            printf("Ingrese un (número hasta 10 números): ");
-            scanf("%i",&numero);
-
-        if (numero >= 0){
-            v[i] = numero;
-            i++;
-            
-        }
-
+    while (numero >= 0){
+        
         if (numero%6 == 0){
             multiplo++;
         }
         
-    } while (numero >= 0);
-
-    for (i=0; i<10;i++){
-        
-        if (v[i] > 4 && v[i] < 25){
+        if (numero > 4 && numero < 25){
             cont++;
         }
 
-        if (v[i]%6 == 0){
-            acc = acc + v[i];
+        if (numero%6 == 0){
+            acc += numero;
         }
-    
+
+        if (multiplo>0){
+            promedio = acc/multiplo;
+        }
+        
+        if (numero<min){
+            min=numero;
+        }
+
+        printf("Para ver los resultados ingrese un numero negativo.\n");
+        printf("Ingrese un número (hasta 10 números): ");
+        scanf("%i",&numero);
     }
 
-    promedio = acc/multiplo;
-
     printf("Los números entre 4 y 25 son: %i\n", cont);
-    printf("El promedio de números multiplos de 6 es: %i", promedio);
-   
+    printf("El promedio de números multiplos de 6 es: %i\n", promedio);
+    printf("El numero mas chico ingresado es: %i", min);
 
-return 0;
+    return 0;
 }

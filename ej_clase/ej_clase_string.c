@@ -6,7 +6,7 @@
 
 int main(){
     int i, largocadena,cont;
-    char cadena[largo]={"la vida es bella"};
+    char cadena[largo]={"la vida es bella."};
     largocadena = strlen(cadena);
     cont = 0;
 

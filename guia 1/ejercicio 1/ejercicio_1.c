@@ -1,3 +1,7 @@
+/*1. Calcular el índice de masa corporal ingresando el peso de una persona en kilos y su
+estatura en metros. Este índice se obtiene realizando el cociente entre el peso y el
+cuadrado de la estatura.*/
+
 #include <stdio.h>
 #include <math.h>
 

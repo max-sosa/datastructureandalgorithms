@@ -1,6 +1,5 @@
 {
     "files.associations": {
-        "ejercicio_3.C": "cpp",
         "stdlib.h": "c",
         "stdio.h": "c"
     }

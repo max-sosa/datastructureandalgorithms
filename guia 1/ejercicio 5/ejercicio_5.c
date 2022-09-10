@@ -9,9 +9,8 @@ cero. Calcular y mostrar:
 
 #include <stdio.h>
 
-int
-main ()
-{
+int main (){
+  
   int edad, i = 0, suma = 0, promedio = 0, cont1 = 0, cont2 = 0, cont3 = 0, j = 0;
   float sueldo;
 
@@ -35,44 +34,39 @@ main ()
 
   printf ("EMPLEADO: %i - EDAD: %i - SUELDO: $%.2f\n", i, edad, sueldo);
 
-  while (edad != 0 && sueldo != 0)
+  while (edad != 0 || sueldo != 0)
     {
 
       i++;
 
-      if (sueldo < 15000)
-	{
-	  cont1++;
-	}
-      else if (sueldo >= 15000 && sueldo <= 20000)
-	{
-	  cont2++;
-	}
-      else
-	{
-	  cont3++;
-	}
+      if (sueldo < 15000){
+	      cont1++;
+	    } else if (sueldo >= 15000 && sueldo <= 20000){
+	      cont2++;
+	    } else {
+	      cont3++;
+	    }
 
       printf ("Ingrese la edad del empleado: ");
       scanf ("%i", &edad);
       printf ("Ingrese el sueldo del empleado: ");
       scanf ("%f", &sueldo);
 
-      if (edad > 58)
-	{
-	  sueldo *= 1.05;
-	}
+      if (edad > 58){
+	      sueldo *= 1.05;
+	    } 
 
-      if (sueldo > 10000)
-	{
-	  suma += edad;
-	  j++;
-	}
+      if (sueldo > 10000){
+	      suma += edad;
+	      j++;
+	    }
 
       printf ("EMPLEADO: %i - EDAD: %i - SUELDO: $%.2f\n", i, edad, sueldo);
     };
 
-  promedio = suma / j;
+    if (j>0)
+      promedio = suma / j;
+  
   printf
     ("*********************************************************************************\n");
   printf

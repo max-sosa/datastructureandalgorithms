@@ -1,3 +1,6 @@
+/*2. Ingresar el día y la cotización del dólar durante un mes. Calcular y mostrar el día
+donde hubo la mayor cotización.*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>

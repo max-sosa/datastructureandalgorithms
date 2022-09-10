@@ -12,9 +12,8 @@ float dividir(float n1,float n2);
 float multiplicar(float n1,float n2);
 float promedio(float n1,float n2);
 
-
-float num1, num2, numero1, numero2, res_suma,res_resta, res_division, res_multi, res_promedio;
 float resultado_suma, resultado_resta, resultado_div, resultado_multi, resultado_promedio;
+float num1, num2, numero1, numero2, res_suma,res_resta, res_division, res_multi, res_promedio;
 
 int main(){
     
